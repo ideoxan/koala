@@ -1,4 +1,4 @@
-define([
+require([
     'jquery',
     'TabManager/Tab',
     'TabManager/TabManager',
