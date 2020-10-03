@@ -7,8 +7,10 @@ require([
     'beautify/beautify',
     'beautify/beautify-css',
     'beautify/beautify-html',
-    'marked'
-], ($, Tab, TabManager, tabElement, hljs, beautifyJS, beautifyCSS, beautifyHTML, marked) => {
+    'marked',
+    'ace/ace',
+    'ace/ext/emmet'
+], ($, Tab, TabManager, tabElement, hljs, beautifyJS, beautifyCSS, beautifyHTML, marked, ace) => {
     /* ---------------------------------------- Class/ID Vars --------------------------------------- */
     //Preload
     const preload = document.getElementById('preload')
@@ -187,6 +189,7 @@ require([
         /* ------------------------------------------- Config ------------------------------------------- */
         editor.setTheme("ace/theme/monokai") // sets the theme (MUST LINK IN HTML AS WELL)
         editor.setShowPrintMargin(false);
+        editor.setOptions('enableEmmet', true)
 
         /* ------------------------------------------- Status ------------------------------------------- */
 
@@ -254,7 +257,7 @@ require([
         window.onmessage = msg => {
             let tasks = config.tasks
             let num = msg.data.taskNum
-            if (msg.data.messageFrom == "checker" && tasks[num].nonce == msg.data.nonce && tasks[num].comparativeFunction == 'inject')  {
+            if (msg.data.messageFrom == "checker" && tasks[num].nonce == msg.data.nonce && tasks[num].comparativeFunction == 'inject') {
                 completeTask(num)
             }
         }
