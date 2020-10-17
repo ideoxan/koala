@@ -4,6 +4,12 @@
 ## About
 This repository features the OSS version of the Koala editor that is used on the Ideoxan Website for lesson completion and course activities. Often times, the phrases "Ideoxan Editor" and "Koala" are used interchangably. Koala is simply just a nickname/codeword for the Ideoxan editor and is only used for this repository.
 
+<img width="50%" height="50%" align="right" src="https://raw.githubusercontent.com/ideoxan/ideoxan/master/content/www/static/img/webdrop.png">
+
+The editor has many features, yet its light and simple. It has a tabbed interface at the top for all of the files which are held virtually within the memory. It also contains a customizable viewport that can be used to display a terminal, a website, or anything else. The lesson guide is simply a markdown document that is loaded from the course that displays helpful information needed to complete lessons. At the bottom of this lesson guide is where the lesson tasks are located.
+
+Every part of the editor is connected to one another. For example, the tasks section in the lesson guide is updated whenever both the viewport and the code are updated.
+
 Internally, Koala uses the [Ace Editor](https://ace.c9.io/) to power the code editor. From there, multiple other libraries are used for rendering the viewport, rendering the lesson guides, saving the data to your accounts, and completing a course.
 
 ## Release schedule
