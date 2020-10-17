@@ -2,7 +2,7 @@
 <p align="center">🖥️ Koala is a web-based, open source code editor for the Ideoxan Website.</p>
 
 ## About
-This repository features the OSS version of the Koala editor that is used on the Ideoxan Website for lesson completion and course activities. Often times, the phrases "Ideoxan Editor" and "Koala" are used interchangably. Koala is simply just a nickname/codeword for the Ideoxan editor and is only used for this repository.
+This repository features the OSS version of the Koala editor that is used on the Ideoxan Website for lesson completion and course activities. Often times, the phrases "Ideoxan Editor" and "Koala" are used interchangeably. Koala is simply just a nickname/code word for the Ideoxan editor and is only used for this repository.
 
 <img width="50%" height="50%" align="right" src="https://raw.githubusercontent.com/ideoxan/ideoxan/master/content/www/static/img/webdrop.png">
 
