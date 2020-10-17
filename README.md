@@ -15,6 +15,10 @@ Internally, Koala uses the [Ace Editor](https://ace.c9.io/) to power the code ed
 ## Release schedule
 The release schedule for Koala is simple. The `main` branch is considered the bleeding edge of the release cycle and includes all changes to the codebase. These changes are then individually reviewed and pushed to the `prod` branch every month which is then synced with the [main repository](https://github.com/ideoxan/ideoxan).
 
+## Running
+In it's current state, the editor can not be run as a standalone program or website. It relies on input from the server, and therefore can not run without it. If you'd like to run the editor, visit the [main repo](https://github.com/ideoxan/ideoxan).
+
+*However, if you'd like to try and port this to electron/nwjs, you are more than welcome to open a PR or contact us*
 ## Contributing
 If you would like to contribute to this project, please read the [Contributing Guidelines](https://github.com/ideoxan/contributing)!
 
