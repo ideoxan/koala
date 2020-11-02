@@ -1,4 +1,4 @@
-<h1 align="center">Koala Code Editor</h1>
+<p align="center"><img src="https://raw.githubusercontent.com/ideoxan/koala/master/koala.png"></p>
 <p align="center">🖥️ Koala is a web-based, open source code editor for the Ideoxan Website.</p>
 
 ## About
