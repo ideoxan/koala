@@ -156,6 +156,16 @@ require([
             `)
         }
 
+        let adNum = 0
+        let adHTML = '<ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-1147118331565789"data-ad-slot="5922723014"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>'
+        
+        document.querySelectorAll('#lesson-guide-content-body h4').forEach(element => {
+            if (adNum % 3 == 0) element.insertAdjacentHTML('beforebegin', adHTML)
+            adNum++
+        })
+
+        document.getElementsByClassName('lesson-guide-completion')[document.getElementsByClassName('lesson-guide-completion').length - 1].insertAdjacentHTML('afterend', adHTML)
+
         /* ----------------------------------------- Completion ----------------------------------------- */
         let numCompletedTasks = 0
 
